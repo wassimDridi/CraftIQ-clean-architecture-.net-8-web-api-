@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CraftIQ.Inventory.Core.Entities
+namespace CraftIQ.Inventory.Core.Entities.Categories
 {
     public class Category : BaseEntity
     {
@@ -31,7 +31,7 @@ namespace CraftIQ.Inventory.Core.Entities
         /// <summary>
         /// Ctor used for coping in update
         /// </summary>
-        public void UpdateCategory(string name, string description, Guid modifiedby)
+        public Category(string name, string description, Guid modifiedby)
         {
             Name = name;
             Description = description;
